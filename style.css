@@ -25,6 +25,7 @@ body {
     z-index: 999;
     height: 100%;
     width: 50%;
+    border-radius: 5px;
     backdrop-filter: blur(1px);
     background-color: rgba(0, 0, 0, 0.699);
 }
