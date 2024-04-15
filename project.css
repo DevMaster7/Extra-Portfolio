@@ -1,0 +1,279 @@
+:root {
+    --maincolor: #363636;
+    --seccolor: #dd7831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--maincolor);
+}
+
+.sidelinkscon {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+.mainsidelinks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 9px 1.5px;
+}
+
+.xmark {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+.fa-xmark {
+    color: white;
+    font-size: 9vw;
+}
+
+.sidelinks {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    font-size: 6vw;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.sidelinks:hover {
+    background-color: rgba(99, 99, 99, 0.194);
+    border-radius: 5px;
+}
+
+.uselinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.ulinks {
+    font-size: 8vw;
+    color: rgb(196, 196, 196);
+}
+
+.navcon {
+    width: 100%;
+    height: 70px;
+    padding: 1vw 2.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px black;
+    border-bottom: 2px solid black;
+}
+
+.menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(25, 25, 25, 0.589);
+    display: flex;
+    justify-content: center;
+    display: none;
+    align-items: center;
+}
+
+.ri-menu-2-line {
+    color: white;
+    font-size: 35px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.linkscon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.links {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-weight: 600;
+    transition: 250ms ease-in-out;
+}
+
+.links:hover {
+    color: var(--seccolor);
+}
+
+.links::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid var(--seccolor);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.links:hover:after {
+    transform: scaleX(1);
+}
+
+@media (max-width:500px) {
+    .navcon {
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: flex;
+
+    }
+
+    .linkscon {
+        display: none;
+    }
+}
+
+
+/* Header Section Complete */
+
+
+
+
+
+/* Main Section Complete */
+
+
+.mainfooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.container3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.img3 {
+    width: 90px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.text3 {
+    text-align: center;
+    color: rgb(196, 196, 196);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.text4 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.text4:hover {
+    color: var(--seccolor);
+}
+
+.text4::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid var(--seccolor);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.text4:hover:after {
+    transform: scaleX(1);
+}
+
+.container4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text5 {
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+
+.mylogo {
+    color: white;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #f731cc, rgb(110, 255, 38));
+}
+
+@media (max-width:500px) {
+    .container3 {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .container4 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+}
+
+
+/* Footer Section Complete */
