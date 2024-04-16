@@ -183,33 +183,191 @@ body {
     background: url(assets/output-onlinepngtools.png);
 }
 
-.heading{
+.textes {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.heading {
     color: white;
     text-shadow: 0px 0px 20px rgb(255, 255, 255);
-    cursor: pointer;
     font-size: 35px;
     font-weight: 700;
     line-height: 50px;
 }
 
-.text1{
-    color: white;
+.text1 {
+    color: rgb(232, 232, 232);
     font-size: 18px;
     line-height: 30px;
 }
 
-.text1 span{
+.text1 span {
     color: var(--seccolor);
-    cursor: default;
+}
+
+.continput {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+}
+
+.inputext {
+    color: rgb(236, 236, 236);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.lastcon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    margin-left: 75px;
+}
+
+.input1 {
+    background-color: rgba(255, 255, 255, 0.845);
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    width: 340px;
+}
+
+::placeholder {
+    position: relative;
+    left: 6px;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    font-size: 20px;
+}
+
+textarea {
+    max-height: 100px;
+    min-height: 100px;
+    width: 260px;
+    max-width: 500px;
+    min-width: 260px;
+    background-color: rgba(255, 255, 255, 0.845);
+    font-size: 20px;
+}
+
+.lastmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 30px;
+}
+
+.term {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    bottom: 10px;
+}
+
+.lab {
+    color: white;
+    text-decoration: none;
+}
+
+input.check {
+    width: 20px;
+    height: 25px;
+}
+
+.btn {
+    padding: 15px 25px;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #dd7831;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.btn:active {
+    background-color: #bb692e;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
 }
 
 @media (max-width:500px) {
-    .heading{
+    .heading {
         font-size: 27px;
     }
-    .text1{
+
+    .text1 {
         font-size: 15px;
-        line-height: 20px;
+        line-height: 23px;
+    }
+
+    .name {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .input1 {
+        height: 30px;
+        width: 240px;
+    }
+
+    input[type="text"] {
+        font-size: 18px;
+    }
+
+    .inputext {
+        font-size: 23px;
+    }
+
+    textarea {
+        width: 50px;
+        min-width: 200px;
+        background-color: rgba(255, 255, 255, 0.845);
+        font-size: 18px;
+    }
+
+    .lastcon {
+        gap: 50px;
+        margin-left: 0;
+    }
+
+    .continput {
+        margin-top: 50px;
+        gap: 50px;
+    }
+
+    .textes {
+        padding-left: 0px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        box-shadow: 0 7px #999;
+    }
+
+    .g-recaptcha {
+        width: 30px;
     }
 }
 
