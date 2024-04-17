@@ -146,6 +146,22 @@ body {
     transform: scaleX(1);
 }
 
+.shop::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid var(--seccolor);
+    transform: scaleX(1);
+    transition: transform 250ms ease-in-out;
+}
+
+.shop {
+    color: #e7e7e7;
+}
+
+.shop:hover {
+    color: #e7e7e7;
+}
+
 @media (max-width:500px) {
     .navcon {
         justify-content: space-between;

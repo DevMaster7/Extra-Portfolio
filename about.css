@@ -146,6 +146,22 @@ body {
     transform: scaleX(1);
 }
 
+.about::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid var(--seccolor);
+    transform: scaleX(1);
+    transition: transform 250ms ease-in-out;
+}
+
+.about {
+    color: #e7e7e7;
+}
+
+.about:hover {
+    color: #e7e7e7;
+}
+
 @media (max-width:500px) {
     .navcon {
         justify-content: space-between;

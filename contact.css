@@ -146,6 +146,22 @@ body {
     transform: scaleX(1);
 }
 
+.contact::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid var(--seccolor);
+    transform: scaleX(1);
+    transition: transform 250ms ease-in-out;
+}
+
+.contact {
+    color: #e7e7e7;
+}
+
+.contact:hover {
+    color: #e7e7e7;
+}
+
 @media (max-width:500px) {
     .navcon {
         justify-content: space-between;
@@ -179,7 +195,7 @@ body {
     width: 85%;
     box-shadow: 0px 0px 20px 3px black;
     border-radius: 15px;
-    padding: 10px 15px 40px;
+    padding: 10px 15px 60px;
     background: url(assets/output-onlinepngtools.png);
 }
 
@@ -361,18 +377,35 @@ input.check {
 
     .btn {
         padding: 10px 20px;
-        font-size: 20px;
+        font-size: 18px;
         border-radius: 10px;
         box-shadow: 0 7px #999;
+        position: relative;
+        bottom: 40px;
     }
-    .capt{
+
+    .capt {
         width: 30px;
     }
 
     .g-recaptcha {
-        /* display: none; */
-        max-width: 10px;
-        width: 0px;
+        display: none;
+
+    }
+
+    .term {
+        bottom: 60px;
+    }
+
+    .maincontainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 85%;
+        box-shadow: 0px 0px 20px 3px black;
+        border-radius: 15px;
+        padding: 10px 15px 10px;
+        background: url(assets/output-onlinepngtools.png);
     }
 }
 
