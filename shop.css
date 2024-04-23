@@ -21,7 +21,7 @@ body {
     display: none;
     justify-content: space-between;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     height: 100%;
     width: 50%;
@@ -181,7 +181,26 @@ body {
 /* Header Section Complete */
 
 
+.mainestcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.maincontainer{
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.676);
+}
+
+.maincontainer span{
+    color: white;
+    font-size: 30px;
+}
+
+.maincontainer span abbr{
+    text-decoration: none;
+}
 
 
 /* Main Section Complete */

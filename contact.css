@@ -21,7 +21,7 @@ body {
     display: none;
     justify-content: space-between;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     z-index: 999;
     height: 100%;
     width: 50%;
