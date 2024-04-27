@@ -233,7 +233,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     /* gap: 100px; */
 }
 
@@ -244,7 +244,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .right {
