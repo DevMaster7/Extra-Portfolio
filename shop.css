@@ -387,6 +387,7 @@ body {
 
     .left {
         gap: 60px;
+        margin: 0;
     }
 
     .right {
@@ -398,7 +399,7 @@ body {
     }
 
     .image2 {
-        height: 370px;
+        height: 280px;
     }
 }
 
