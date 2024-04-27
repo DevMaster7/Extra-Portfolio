@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="shortcut icon" type="x-icon" href="assets/logo.png">
     <link rel="stylesheet" href="contact.css">
     <title>MunnyDevMaster - Contact</title>
@@ -34,7 +35,8 @@
                     <a target="_blank" href="" class="ulinks"><i class="fa-brands fa-youtube"></i></a>
                     <a target="_blank" href="" class="ulinks"><i class="fa-brands fa-facebook"></i></a>
                     <a target="_blank" href="" class="ulinks"><i class="fa-brands fa-instagram"></i></a>
-                    <a target="_blank" href="https://github.com/MunnyDevMaster" class="ulinks"><i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://github.com/MunnyDevMaster" class="ulinks"><i
+                            class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="navcon">
@@ -115,7 +117,8 @@
                     <a target="_blank" href="" class="text3">Facebook &nbsp;<i class="fa-brands fa-facebook"></i></a>
                     <a target="_blank" href="" class="text3">Instagram &nbsp;<i class="fa-brands fa-instagram"></i></a>
                     <a target="_blank" href="" class="text3">Twitter &nbsp;<i class="fa-brands fa-twitter"></i></a>
-                    <a target="_blank" href="https://github.com/MunnyDevMaster" class="text3">Github &nbsp;<i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://github.com/MunnyDevMaster" class="text3">Github &nbsp;<i
+                            class="fa-brands fa-github"></i></a>
                 </div>
                 <div class="fcons">
                     <div class="text4">Support</div>
@@ -149,27 +152,7 @@
         const sidebar = document.querySelector('.sidelinkscon')
         sidebar.style.display = 'none'
     }
-
-
-
-
-
-    function scaleCaptcha(){
-        const captchaWidth = 900;
-        const containerWidth = $(".g-recaptcha").width();
-        if (captchaWidth > containerWidth) {
-           var captchScale = (containerWidth / captchaWidth)*3;
-           $(".g-recaptcha").css({
-            "transform":"scale("+captchScale+")",
-            "margin":captchScale*2+"vh auto"
-           })
-        }
-    }
-    
-     scaleCaptcha()
-     $(window).resize( scaleCaptcha );
 </script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 </html>
