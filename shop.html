@@ -14,6 +14,72 @@
 </head>
 
 <body>
+    <div class="mainNike">
+        <div class="up">
+            <div><i class="ri-arrow-left-line"></i></div>
+            <div class="nikedaba">
+                <img src="assets/nike.webp" selectable="false"
+                    style=" box-shadow: 0px 0px 15px 1px black; border-radius: 5px; width: 98%; height: 98%;" alt="">
+            </div>
+            <div><i class="ri-arrow-right-line"></i></div>
+        </div>
+        <div class="down"><i onclick="closeNike()" class="fa-solid fa-x" style="color: #ffffff;"></i></div>
+    </div>
+    <div class="mainPerfume">
+        <div class="up">
+            <div><i class="ri-arrow-left-line"></i></div>
+            <div class="perfumedaba">
+                <img src="assets/bottle-aftershave-scent-perfume.jpg"
+                    style=" box-shadow: 0px 0px 15px 1px black; border-radius: 5px; width: 98%; height: 98%;" alt="">
+            </div>
+            <div><i class="ri-arrow-right-line"></i></div>
+        </div>
+        <div class="down"><i onclick="closePerfume()" class="fa-solid fa-x" style="color: #ffffff;"></i></div>
+    </div>
+    <div class="mainWatch">
+        <div class="up">
+            <div><i class="ri-arrow-left-line"></i></div>
+            <div class="watchdaba">
+                <img src="assets/watch.png"
+                    style=" box-shadow: 0px 0px 15px 1px black; border-radius: 5px; width: 98%; height: 98%;" alt="">
+            </div>
+            <div><i class="ri-arrow-right-line"></i></div>
+        </div>
+        <div class="down"><i onclick="closeWatch()" class="fa-solid fa-x" style="color: #ffffff;"></i></div>
+    </div>
+    <div class="mainCamera">
+        <div class="up">
+            <div><i class="ri-arrow-left-line"></i></div>
+            <div class="cameradaba">
+                <img src="assets/camera.jpg"
+                    style=" box-shadow: 0px 0px 15px 1px black; border-radius: 5px; width: 98%; height: 98%;" alt="">
+            </div>
+            <div><i class="ri-arrow-right-line"></i></div>
+        </div>
+        <div class="down"><i onclick="closeCamera()" class="fa-solid fa-x" style="color: #ffffff;"></i></div>
+    </div>
+    <div class="mainGlasses">
+        <div class="up">
+            <div><i class="ri-arrow-left-line"></i></div>
+            <div class="glassesdaba">
+                <img src="assets/glasses.png"
+                    style=" box-shadow: 0px 0px 15px 1px black; border-radius: 5px; width: 98%; height: 98%;" alt="">
+            </div>
+            <div><i class="ri-arrow-right-line"></i></div>
+        </div>
+        <div class="down"><i onclick="closeGlasses()" class="fa-solid fa-x" style="color: #ffffff;"></i></div>
+    </div>
+    <div class="mainWallet">
+        <div class="up">
+            <div><i class="ri-arrow-left-line"></i></div>
+            <div class="walletdaba">
+                <img src="assets/wallet.png"
+                    style=" box-shadow: 0px 0px 15px 1px black; border-radius: 5px; width: 98%; height: 98%;" alt="">
+            </div>
+            <div><i class="ri-arrow-right-line"></i></div>
+        </div>
+        <div class="down"><i onclick="closeWallet()" class="fa-solid fa-x" style="color: #ffffff;"></i></div>
+    </div>
     <header>
         <nav>
             <div class="sidelinkscon">
@@ -71,7 +137,7 @@
                             <div class="items">
                                 <img src="assets/nike.webp" alt="travel" class="image">
                                 <div class="overlay">
-                                    <div class="text">Travel</div>
+                                    <div class="text"><i onclick="zoomNike()" class="ri-fullscreen-line"></i></div>
                                 </div>
                             </div>
                             <div class="textcont">
@@ -96,7 +162,7 @@
                             <div class="items">
                                 <img src="assets/bottle-aftershave-scent-perfume.jpg" alt="travel" class="image">
                                 <div class="overlay">
-                                    <div class="text">Travel</div>
+                                    <div class="text"><i onclick="zoomPerfume()" class="ri-fullscreen-line"></i></div>
                                 </div>
                             </div>
                             <div class="textcont">
@@ -121,7 +187,7 @@
                             <div class="items">
                                 <img src="assets/watch.png" alt="travel" class="image">
                                 <div class="overlay">
-                                    <div class="text">Travel</div>
+                                    <div class="text"><i onclick="zoomWatch()" class="ri-fullscreen-line"></i></div>
                                 </div>
                             </div>
                             <div class="textcont">
@@ -148,7 +214,7 @@
                             <div class="items">
                                 <img src="assets/camera.jpg" alt="travel" class="image2">
                                 <div class="overlay">
-                                    <div class="text">Travel</div>
+                                    <div class="text"><i onclick="zoomCamera()" class="ri-fullscreen-line"></i></div>
                                 </div>
                             </div>
                             <div class="textcont">
@@ -174,7 +240,7 @@
                             <div class="items">
                                 <img src="assets/glasses.png" alt="travel" class="image">
                                 <div class="overlay">
-                                    <div class="text">Travel</div>
+                                    <div class="text"><i onclick="zoomGlasses()" class="ri-fullscreen-line"></i></div>
                                 </div>
                             </div>
                             <div class="textcont">
@@ -199,7 +265,7 @@
                             <div class="items">
                                 <img src="assets/wallet.png" alt="travel" class="image">
                                 <div class="overlay">
-                                    <div class="text">Travel</div>
+                                    <div class="text"><i onclick="zoomWallet()" class="ri-fullscreen-line"></i></div>
                                 </div>
                             </div>
                             <div class="textcont">
@@ -274,6 +340,55 @@
     function hideSidebar() {
         const sidebar = document.querySelector('.sidelinkscon')
         sidebar.style.display = 'none'
+    }
+
+    function zoomNike() {
+        const Nikepic = document.querySelector('.mainNike')
+        Nikepic.style.display = 'flex'
+    }
+    function closeNike() {
+        const Nikepic = document.querySelector('.mainNike')
+        Nikepic.style.display = 'none'
+    }
+    function zoomPerfume() {
+        const Perfumepic = document.querySelector('.mainPerfume')
+        Perfumepic.style.display = 'flex'
+    }
+    function closePerfume() {
+        const Perfumepic = document.querySelector('.mainPerfume')
+        Perfumepic.style.display = 'none'
+    }
+    function zoomWatch() {
+        const Perfumepic = document.querySelector('.mainWatch')
+        Perfumepic.style.display = 'flex'
+    }
+    function closeWatch() {
+        const Watchpic = document.querySelector('.mainWatch')
+        Watchpic.style.display = 'none'
+    }
+    function zoomCamera() {
+        const Camerapic = document.querySelector('.mainCamera')
+        Camerapic.style.display = 'flex'
+    }
+    function closeCamera() {
+        const Camerapic = document.querySelector('.mainCamera')
+        Camerapic.style.display = 'none'
+    }
+    function zoomGlasses() {
+        const Glassespic = document.querySelector('.mainGlasses')
+        Glassespic.style.display = 'flex'
+    }
+    function closeGlasses() {
+        const Glassespic = document.querySelector('.mainGlasses')
+        Glassespic.style.display = 'none'
+    }
+    function zoomWallet() {
+        const Walletpic = document.querySelector('.mainWallet')
+        Walletpic.style.display = 'flex'
+    }
+    function closeWallet() {
+        const Walletpic = document.querySelector('.mainWallet')
+        Walletpic.style.display = 'none'
     }
 </script>
 
