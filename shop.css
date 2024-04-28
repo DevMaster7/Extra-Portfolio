@@ -209,6 +209,7 @@ body {
     flex-direction: column;
     padding-right: 600px;
     padding-left: 35px;
+    margin-bottom: 1.5vw;
 }
 
 .heading {
@@ -233,18 +234,14 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin-top: 30px; */
-    /* gap: 100px; */
 }
 
 .left {
-    /* margin-top: 20px; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 100px;
-    margin-bottom: 70px;
 }
 
 .right {
@@ -318,35 +315,42 @@ body {
     text-align: center;
 }
 
-.textcont{
+.textcont {
     display: flex;
     justify-content: space-between;
     width: 95%;
 }
 
-.lefttext{
+.lefttext {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.pricecont{
+.pricecont {
     display: flex;
-    gap: 7px;
+    flex-direction: column-reverse;
 }
 
-.proprice{
+.proprice {
     font-size: 30px;
     font-weight: 600;
 }
 
-.prodisprice{
+.prodisprice {
     text-decoration: line-through;
     color: #cacaca;
     font-size: 20px;
+
 }
 
-.righttext{
+.prodisprice sup {
+    display: inline-block;
+    text-decoration: none !important;
+    color: rgb(222, 16, 16);
+}
+
+.righttext {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,12 +358,12 @@ body {
     gap: 10px;
 }
 
-.prorev{
+.prorev {
     font-size: 20px;
     font-weight: 500;
 }
 
-.prostars{
+.prostars {
     font-size: 24px;
     color: yellow;
 }
@@ -394,12 +398,52 @@ body {
         gap: 60px;
     }
 
+    .boxcontainer {
+        padding: 17px 0 20px;
+    }
+
     .container {
         width: 95%;
     }
 
     .image2 {
         height: 280px;
+    }
+
+    .textcont {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .lefttext {
+        gap: 5px;
+    }
+
+    .righttext {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .proName {
+        font-size: 28px;
+    }
+
+    .proprice {
+        font-size: 26px;
+    }
+
+    .prodisprice {
+        font-size: 18px;
+    }
+
+    .prorev {
+        font-size: 19px;
+    }
+
+    .prostars {
+        font-size: 20px;
     }
 }
 
