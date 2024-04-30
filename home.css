@@ -270,6 +270,35 @@ body {
     align-items: center;
 }
 
+@media (max-width:850px) {
+    .container1{
+        gap: 40px;
+    }
+
+    .img1{
+        width: 90%;
+        height: 90%;
+    }
+
+    .lap {
+        width: 400px;
+        height: 350px;
+        position: relative;
+    }
+
+    .viddiv {
+        position: absolute;
+        top: 39px;
+        left: 96px;
+        right: 0;
+    }
+
+    .vid {
+        width: 213px;
+        height: 165px;
+    }
+}
+
 @media (max-width:500px) {
     .container1 {
         flex-direction: column;
@@ -409,8 +438,23 @@ body {
     background: linear-gradient(to right, #f731cc, rgb(110, 255, 38));
 }
 
+@media (max-width:850px) {
+    .container3{
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(2,200px);
+    }
+    .container4 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+}
+
 @media (max-width:500px) {
     .container3 {
+        display: flex;
         flex-direction: column;
         gap: 60px;
     }
