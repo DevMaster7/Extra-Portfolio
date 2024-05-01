@@ -17,6 +17,41 @@ body {
     background-color: var(--maincolor);
 }
 
+.mIcon {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 999;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    border-radius: 100px;
+    transition: .5s;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #00000000;
+}
+
+.mIcon:hover {
+    width: 255px;
+    background: linear-gradient(to right, #f731cc, rgb(110, 255, 38));
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
 .sidelinkscon {
     display: none;
     justify-content: space-between;
@@ -90,7 +125,6 @@ body {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 0px 10px black;
-    border-bottom: 2px solid black;
 }
 
 .menu {
@@ -165,6 +199,11 @@ body {
 @media (max-width:500px) {
     .navcon {
         justify-content: space-between;
+        background-color: #363636a2;
+        backdrop-filter: blur(2px);
+        top: 0;
+        position: fixed;
+        z-index: 99;
     }
 
     .menu {
@@ -174,6 +213,10 @@ body {
 
     .linkscon {
         display: none;
+    }
+
+    .sidelinkscon {
+        top: 0;
     }
 }
 
@@ -199,6 +242,13 @@ body {
     background: url(assets/output-onlinepngtools.png);
 }
 
+.textcon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .text1 {
     color: white;
     font-size: 45px;
@@ -207,12 +257,6 @@ body {
     text-shadow: 0px 0px 20px rgb(255, 255, 255);
     cursor: pointer;
     text-align: center;
-}
-
-.text1:hover {
-    color: #dd7831;
-    text-shadow: 0px 0px 20px var(--seccolor);
-    transition: 1s;
 }
 
 .container1 {
@@ -257,12 +301,6 @@ body {
     text-shadow: 0px 0px 20px rgb(255, 255, 255);
     cursor: pointer;
     text-align: center;
-}
-
-.text2:hover {
-    color: #dd7831;
-    text-shadow: 0px 0px 20px var(--seccolor);
-    transition: 1s;
 }
 
 .container2 {
@@ -484,15 +522,18 @@ body {
 }
 
 @media (max-width:850px) {
-    .maincontainer{
+    .maincontainer {
         width: 93%;
     }
-    .text1{
+
+    .text1 {
         font-size: 35px;
     }
-    .text2{
+
+    .text2 {
         font-size: 35px;
     }
+
     .boxes {
         height: 130px;
         width: 245px;
@@ -504,17 +545,17 @@ body {
         font-size: 25px;
     }
 
-    .container2{
+    .container2 {
         gap: 20px;
     }
 
-    .barcontainer{
+    .barcontainer {
         width: 290px;
         height: 140px;
         gap: 40px;
     }
 
-    .cbar{
+    .cbar {
         width: 270px;
         height: 28px;
     }
@@ -572,6 +613,10 @@ body {
 
     .barcontainer:hover .ja {
         color: rgb(202, 202, 202);
+    }
+
+    .mainestcontainer {
+        margin-top: 120px;
     }
 }
 
@@ -646,6 +691,9 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 14px;
+    padding-top: 17px;
+    border-top: 1px solid white;
 }
 
 .text5 {
@@ -656,34 +704,57 @@ body {
 
 .mylogo {
     color: white;
-    width: 300px;
+    width: 250px;
     height: 50px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
     font-size: 19px;
     font-weight: 700;
     cursor: pointer;
-    margin-bottom: 10px;
     background: linear-gradient(to right, #f731cc, rgb(110, 255, 38));
 }
 
 @media (max-width:850px) {
-    .container3{
+    .mylogo {
+        display: flex;
+    }
+
+    .mIcon {
+        display: flex;
+    }
+
+    .mIcon:hover {
+        background: #00000000;
+        width: 70px;
+    }
+
+    .container3 {
         display: grid;
         gap: 50px;
-        grid-template-columns: repeat(2,200px);
+        grid-template-columns: repeat(2, 200px);
     }
+
     .container4 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 25px;
+        border: none;
+        padding: 0;
     }
 }
 
 @media (max-width:500px) {
+    .mylogo {
+        display: flex;
+    }
+
+    .mIcon {
+        display: none;
+    }
+
     .container3 {
         display: flex;
         flex-direction: column;
@@ -695,6 +766,8 @@ body {
         justify-content: center;
         align-items: center;
         gap: 25px;
+        border: none;
+        padding: 0;
     }
 }
 

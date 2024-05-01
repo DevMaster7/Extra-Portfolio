@@ -12,11 +12,12 @@
 </head>
 
 <body>
+    <div class="mIcon"><img class="icon" src="assets/logo.png" alt="">Design By Muneeb</div>
     <header>
         <nav>
             <div class="sidelinkscon">
                 <div class="mainsidelinks">
-                    <div class="xmark"><i onclick="hideSidebar()" class="fa-solid fa-xmark"></i></div>
+                    <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
                     <a href="index.html" class="sidelinks">
                         <div>Home</div>
                     </a>
@@ -34,11 +35,12 @@
                     <a target="_blank" href="" class="ulinks"><i class="fa-brands fa-youtube"></i></a>
                     <a target="_blank" href="" class="ulinks"><i class="fa-brands fa-facebook"></i></a>
                     <a target="_blank" href="" class="ulinks"><i class="fa-brands fa-instagram"></i></a>
-                    <a target="_blank" href="https://github.com/MunnyDevMaster" class="ulinks"><i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://github.com/MunnyDevMaster" class="ulinks"><i
+                            class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="navcon">
-                <div class="menu"><i onclick="showSidebar()" class="ri-menu-2-line"></i></div>
+                <div class="menu"><i class="ri-menu-2-line"></i></div>
                 <div><img class="logo" src="assets/logo.png" alt=""></div>
                 <div class="linkscon">
                     <a href="index.html" class="links">Home</a>
@@ -102,7 +104,8 @@
                     <a target="_blank" href="" class="text3">Facebook &nbsp;<i class="fa-brands fa-facebook"></i></a>
                     <a target="_blank" href="" class="text3">Instagram &nbsp;<i class="fa-brands fa-instagram"></i></a>
                     <a target="_blank" href="" class="text3">Twitter &nbsp;<i class="fa-brands fa-twitter"></i></a>
-                    <a target="_blank" href="https://github.com/MunnyDevMaster" class="text3">Github &nbsp;<i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://github.com/MunnyDevMaster" class="text3">Github &nbsp;<i
+                            class="fa-brands fa-github"></i></a>
                 </div>
                 <div class="fcons">
                     <div class="text4">Support</div>
@@ -121,20 +124,40 @@
             </div>
             <div class="container4">
                 <div class="text5">CopyRight &copy; 2024 - All Rights Reserved.</div>
-                <div class="mylogo">Design By Munny's DevMaster</div>
+                <div class="mylogo">Design By Muneeb Ul Haq</div>
             </div>
         </div>
     </footer>
     <!-- Footer Section Complete -->
 </body>
 <script>
-    function showSidebar() {
-        const sidebar = document.querySelector('.sidelinkscon')
-        sidebar.style.display = 'flex'
-    }
-    function hideSidebar() {
-        const sidebar = document.querySelector('.sidelinkscon')
-        sidebar.style.display = 'none'
-    }
+    const xmark = document.querySelector(".xmark")
+    const menubar = document.querySelector(".menu")
+    const a = document.querySelector(".sidelinkscon")
+    const b = document.querySelector("main")
+    const c = document.querySelector("footer")
+    
+    menubar.addEventListener("click",function(){
+        a.style.display = "flex"
+    })
+    xmark.addEventListener("click",function(){
+        a.style.display = "none"
+    })
+    b.addEventListener("click",function(){
+        a.style.display = "none"
+    })
+    c.addEventListener("click",function(){
+        a.style.display = "none"
+    })
+
+    // function showSidebar() {
+    //     const sidebar = document.querySelector('.sidelinkscon')
+    //     sidebar.style.display = 'flex'
+    // }
+    // function hideSidebar() {
+    //     const sidebar = document.querySelector('.sidelinkscon')
+    //     sidebar.style.display = 'none'
+    // }
 </script>
+
 </html>

@@ -32,14 +32,13 @@ body {
     margin-bottom: 10px;
     padding-right: 10px;
     border-radius: 100px;
-    transition: 1s;
+    transition: .5s;
     overflow: hidden;
     font-size: 20px;
     font-weight: 600;
     white-space: nowrap;
     cursor: pointer;
     background: #00000000;
-    display: none;
 }
 
 .mIcon:hover {
@@ -180,7 +179,7 @@ body {
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 999;
+    z-index: 99;
     background-color: #0000008a;
     backdrop-filter: blur(2px);
 }
@@ -295,7 +294,6 @@ body {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 0px 10px black;
-    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 .menu {
@@ -370,6 +368,11 @@ body {
 @media (max-width:500px) {
     .navcon {
         justify-content: space-between;
+        background-color: #363636a2;
+        backdrop-filter: blur(2px);
+        top: 0;
+        position: fixed;
+        z-index: 99;
     }
 
     .menu {
@@ -379,6 +382,10 @@ body {
 
     .linkscon {
         display: none;
+    }
+
+    .sidelinkscon {
+        top: 0;
     }
 }
 
@@ -606,6 +613,9 @@ body {
 }
 
 @media (max-width:500px) {
+    .mainestcontainer {
+        margin-top: 120px;
+    }
 
     .maincontainer {
         padding: 25px 0 45px;
@@ -789,6 +799,9 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 14px;
+    padding-top: 17px;
+    border-top: 1px solid white;
 }
 
 .text5 {
@@ -799,20 +812,32 @@ body {
 
 .mylogo {
     color: white;
-    width: 300px;
+    width: 250px;
     height: 50px;
-    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
     font-size: 19px;
     font-weight: 700;
     cursor: pointer;
-    margin-bottom: 10px;
+    display: none;
     background: linear-gradient(to right, #f731cc, rgb(110, 255, 38));
 }
 
 @media (max-width:850px) {
+    .mylogo {
+        display: flex;
+    }
+
+    .mIcon {
+        display: flex;
+    }
+
+    .mIcon:hover {
+        background: #00000000;
+        width: 70px;
+    }
+
     .container3 {
         display: grid;
         gap: 50px;
@@ -824,10 +849,20 @@ body {
         justify-content: center;
         align-items: center;
         gap: 25px;
+        border: none;
+        padding: 0;
     }
 }
 
 @media (max-width:500px) {
+    .mylogo {
+        display: flex;
+    }
+
+    .mIcon {
+        display: none;
+    }
+
     .container3 {
         display: flex;
         flex-direction: column;
@@ -839,6 +874,8 @@ body {
         justify-content: center;
         align-items: center;
         gap: 25px;
+        border: none;
+        padding: 0;
     }
 }
 
